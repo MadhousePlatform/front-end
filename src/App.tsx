@@ -1,8 +1,19 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { gql, useQuery } from "@apollo/client";
 
+const query = gql`
+  {
+    hello
+  }
+`;
 function App() {
+  const { data, loading } = useQuery(query);
+  if (loading) {
+    return <>Loading...</>;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +27,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hello, {data.hello}
         </a>
       </header>
     </div>
