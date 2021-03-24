@@ -1,0 +1,44 @@
+h1,
+h2 {
+  margin: 0;
+  padding: 2vh 0;
+}
+
+.pack-cards {
+  margin: 2rem 0;
+  padding: 0 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+  gap: 5rem;
+}
+
+.pack {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.pack img {
+  width: 100%;
+}
+
+.pack img.access-logo {
+  width: 50px;
+}
+
+.pack p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  background-color: var(--main-colour);
+  padding: 1rem;
+}
+
+.pack-name {
+  font-size: 1.25rem;
+}

@@ -1,0 +1,37 @@
+header {
+  background-color: var(--main-colour);
+  padding: 10px;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+nav.right {
+  padding-right: 3rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 100px;
+}
+
+.discord-logo {
+  height: 60px;
+}
